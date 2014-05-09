@@ -1,0 +1,200 @@
+
+<html><head>
+<title>Social Snapshot</title>
+<meta name="description" content="Social Snapshot summarizes your Facebook News Feed. It's super easy.">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="ladda.min.css">
+<script src="ladda.min.js"></script>
+<script src="spin.min.js"></script>
+
+
+<script type="text/javascript">var _kmq = _kmq || [];
+var _kmk = _kmk || 'ba93b946c3ddf4cd8879bd99f251da1a455e1e60';
+function _kms(u){
+  setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = u;
+    f.parentNode.insertBefore(s, f);
+  }, 1);
+}
+_kms('//i.kissmetrics.com/i.js');
+_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+
+<body>
+
+<!--Greg here's the code for the FACEBOOK Connect.  I wouldn't touch this.  -->
+
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '579722582124917',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<!-- Here's the code for the format.  Play with this.  -->
+
+	<div class="container" id="top">
+		<div class="show" style="margin-top:50px;">
+			
+			<div class="text-center signup">
+				
+				<div class="row" style="text-align:center !important;">
+				
+				</div>
+				<div class="row" id="form">
+				<p style="font-size:20px;">
+					
+					A Summary of your Social Network<br>
+					Confirm Your Email and Connect Your Facebook:
+				
+				</p>
+				
+				
+				<form class="form" action="MAILCHIMP HERElist-manage2.com/subscribe/post?u=0c61b2b226e51dc2a393f0367&amp;id=0f06847ca6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
+					<!--<div class="mc-field-group form-group">
+						<input type="text" value="" name="FNAME" class="form-control input-lg" id="mce-FNAME" placeholder="First name" autofocus>
+					</div>
+					<div class="mc-field-group form-group">
+						<input type="text" value="" name="LNAME" class="form-control input-lg" id="mce-LNAME" placeholder="Last name">
+					</div>-->
+					<div class="mc-field-group form-group" style="margin-top: 33px;">
+						<input type="email" value="" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL" placeholder="you@example.com">
+						<input type="hidden" name="source" value="">
+					</div>
+					<p id="message"></p>
+
+					<!--<div style="display:none;" class="fb-like" data-href="https://www.facebook.com/bitofnews" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>-->
+					
+					<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+			
+					<div class="join" style="margin-top:20px; margin-bottom: 30px;">
+						<input class="btn btn-success btn-lg" type="submit" value="Confirm &raquo;" name="subscribe" id="mc-embedded-subscribe">
+
+					</div>
+
+					
+
+					<small><br/>You can opt-out anytime with one click<br/> Rest assured that we'll never share your information.</small>
+				</form>
+				
+				</div>
+
+			
+			</div>
+			<div class="text-center readmore visible-md visible-lg">
+				<p><a href="#features">Learn more </a><img src="image here" /></p>
+			</div>
+		</div>
+		
+		<hr>
+
+		<div class="row" id="features">
+		
+		</div>
+		
+		<div class="row visible-xs phoneblock2 text-center">
+				<img alt="logo" class="logo" src="http://www.imgur.com/9Jb1HkE" height="50" width="150">
+		
+		</div>
+		
+		<hr />
+		
+	
+	
+<script type="text/javascript">
+// variable to hold request
+var request;
+// bind to the submit event of our form
+$("#mc-embedded-subscribe-form").submit(function(event){
+    // abort any pending request
+    if (request) {
+        request.abort();
+    }
+    // setup some local variables
+    var $form = $(this);
+    // let's select and cache all the fields
+    var $inputs = $form.find("input, select, button, textarea");
+    // serialize the data in the form
+    var serializedData = $form.serialize();
+
+    // let's disable the inputs for the duration of the ajax request
+    $inputs.prop("disabled", true);
+
+    // fire off the request to /form.php
+    request = $.ajax({
+        url: "subscribe.php",
+        type: "post",
+        data: serializedData
+    });
+
+    // callback handler that will be called on success
+    request.done(function (response, textStatus, jqXHR){
+        // log a message to the console
+        
+        console.log("Hooray, it worked!");
+    });
+
+    // callback handler that will be called on failure
+    request.fail(function (jqXHR, textStatus, errorThrown){
+        // log the error to the console
+        console.error(
+            "The following error occured: "+
+            textStatus, errorThrown
+        );
+    });
+
+    // callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function () {
+        // reenable the inputs
+        //$inputs.prop("disabled", false);
+        //$("input").attr("disabled", true);
+        $inputs.prop("disabled", true);
+        $('#message').html('Subscribed! You\'ll receive an e-mail starting tomorrow at 9:30am.'
+        	);
+
+    // prevent default posting of form
+    event.preventDefault();
+});
+
+
+$(document).ready(function(){
+	$('#mce-EMAIL').focus();
+});
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500, function() {
+		$('#mce-EMAIL').focus();
+	});
+    return false; 
+});	
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43559529-1', 'bitofnews.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body></html>
