@@ -46,7 +46,7 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<!-- Here's the code for the format.  Play with this.  -->
+<!-- Here is where the box formating begins -->
 
 	<div class="container" id="top">
 		<div class="show" style="margin-top:50px;">
@@ -65,7 +65,7 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 				</p>
 				
 				
-				<form class="form" action="MAILCHIMP HERElist-manage2.com/subscribe/post?u=0c61b2b226e51dc2a393f0367&amp;id=0f06847ca6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
+				<form class="form" action="http://Social-Snapshot.us8.list-manage.com/subscribe/post?u=f758f47c4a50239d33d31392b&amp;id=27d1aac84b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
 					<!--<div class="mc-field-group form-group">
 						<input type="text" value="" name="FNAME" class="form-control input-lg" id="mce-FNAME" placeholder="First name" autofocus>
 					</div>
@@ -89,7 +89,7 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 
 					
 
-					<small><br/>You can opt-out anytime with one click<br/> Rest assured that we'll never share your information.</small>
+					<small><br/>You can opt-out anytime with one click.<br/></small>
 				</form>
 				
 				</div>
@@ -97,7 +97,10 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 			
 			</div>
 			<div class="text-center readmore visible-md visible-lg">
-				<p><a href="#features">Learn more </a><img src="image here" /></p>
+				<p><a href="#features"> Learn more </a><img src="image here" /></p>
+			</div>
+			<div class="text-center readmore visible-md visible-lg">
+				<small><br/>Version 0.0.22a<br/></small>
 			</div>
 		</div>
 		
@@ -107,16 +110,9 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 		
 		</div>
 		
-		<div class="row visible-xs phoneblock2 text-center">
-				<img alt="logo" class="logo" src="http://www.imgur.com/9Jb1HkE" height="50" width="150">
-		
-		</div>
 		
 		<hr />
 		
-	
-<!--Here's the subscriber code. I wouldn't touch this-->
-
 <script type="text/javascript">
 // variable to hold request
 var request;
@@ -166,13 +162,15 @@ $("#mc-embedded-subscribe-form").submit(function(event){
         //$inputs.prop("disabled", false);
         //$("input").attr("disabled", true);
         $inputs.prop("disabled", true);
-        $('#message').html('Subscribed! You\'ll receive an e-mail starting tomorrow at 9:30am.'
+        $('#message').html('Subscribed! You\'ll receive news summary starting tomorrow at 9:30am.'
         	);
+        $('.twitter-like').show("slow")
+    });
 
     // prevent default posting of form
     event.preventDefault();
 });
-
+		
 
 $(document).ready(function(){
 	$('#mce-EMAIL').focus();
@@ -188,6 +186,5 @@ $('a').click(function(){
 </script>
 
 </body>
-	
 	
 </html>
