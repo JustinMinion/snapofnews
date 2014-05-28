@@ -1,7 +1,6 @@
-
 <html><head>
-<title>Social Snapshot</title>
-<meta name="description" content="Social Snapshot summarizes your Facebook News Feed. It's super easy.">
+<title>SnapofNews</title>
+<meta name="description" content="SnapofNews summarizes today's top news in just 15 seconds. It's super easy.">
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,62 +9,30 @@
 <script src="spin.min.js"></script>
 
 
-<script type="text/javascript">var _kmq = _kmq || [];
-var _kmk = _kmk || 'ba93b946c3ddf4cd8879bd99f251da1a455e1e60';
-function _kms(u){
-  setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0],
-    s = d.createElement('script');
-    s.type = 'text/javascript'; s.async = true; s.src = u;
-    f.parentNode.insertBefore(s, f);
-  }, 1);
-}
-_kms('//i.kissmetrics.com/i.js');
-_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-</script>
-
+</head>
 <body>
 
-<!--Greg here's the code for the FACEBOOK Connect.  I wouldn't touch this.  -->
-
-<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '579722582124917',
-          xfbml      : true,
-          version    : 'v2.0'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-<!-- Here is where the box formating begins -->
-
 	<div class="container" id="top">
-		<div class="show" style="margin-top:50px;">
-			
+		<div class="show" style="margin-top:-50px;">
+			<div class="iphoneblock">
+				<img alt="iphone" class="iphone" src="http://snapofnews.social-snapshot.com/paper.png">
+			</div>
 			<div class="text-center signup">
 				
-				<div class="row" style="text-align:center !important;">
+				<div class="row">
+					<a href="/"><img class="logo" alt="logo" src="http://snapofnews.social-snapshot.com/greenlogo.png"  style="max-width:60%;"></a>
+				</div>
+				<div class="row" style="text-align:left !important;">
 				
 				</div>
 				<div class="row" id="form">
 				<p style="font-size:20px;">
 					
-					A Summary of your Social Network<br>
-					Confirm Your Email and Connect Your Facebook:
+					1 minute news summaries, in your inbox<br>
+					Confirm your email:
 				
 				</p>
-				
-				
-				<form class="form" action="http://Social-Snapshot.us8.list-manage.com/subscribe/post?u=f758f47c4a50239d33d31392b&amp;id=27d1aac84b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
+				<form class="form" action="http://Social-Snapshot.us8.list-manage2.com/subscribe/post?u=f758f47c4a50239d33d31392b&amp;id=ff4eb2716c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
 					<!--<div class="mc-field-group form-group">
 						<input type="text" value="" name="FNAME" class="form-control input-lg" id="mce-FNAME" placeholder="First name" autofocus>
 					</div>
@@ -78,18 +45,16 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 					</div>
 					<p id="message"></p>
 
-					<!--<div style="display:none;" class="fb-like" data-href="https://www.facebook.com/bitofnews" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>-->
-					
-					<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-			
+	
 					<div class="join" style="margin-top:20px; margin-bottom: 30px;">
-						<input class="btn btn-success btn-lg" type="submit" value="Confirm &raquo;" name="subscribe" id="mc-embedded-subscribe">
+						<input class="btn btn-success btn-lg" type="submit" value="Subscribe &raquo;" name="subscribe" id="mc-embedded-subscribe">
 
 					</div>
+					
 
 					
 
-					<small><br/>You can opt-out anytime with one click.<br/></small>
+					<small><br/>By subscribing to our service you are agreeing to our Privacy Policy<br/></small>
 				</form>
 				
 				</div>
@@ -97,82 +62,77 @@ _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
 			
 			</div>
 			<div class="text-center readmore visible-md visible-lg">
-				<p><a href="#features"> Learn more </a><img src="image here" /></p>
-			</div>
-			<div class="text-center readmore visible-md visible-lg">
-				<small><br/>Version 0.0.22a<br/></small>
+				<p><a href="#features">Learn more </a><img src="http://snapofnews.social-snapshot.com/carrot.png" /></p>
 			</div>
 		</div>
 		
-		<hr>
+		
+		
+		<hr />
 
 		<div class="row" id="features">
 		
 		</div>
 		
+
+		<div class="row block">
+			<div class="col-md-5 col-md-offset-2">
+				<h2>Bite-sized news</h2>
+				<p>Our intelligent ranking algorithm summarizes the news of the day.  Using a sentence's placement, length, and relevance to keywords, our algorithm forms a summary keeping you informed without drowning in data. </p>
+
+			</div>
+			<div class="col-md-2 visible-md visible-lg">
+				<img src="http://snapofnews.social-snapshot.com/ypteaser.png">
+			</div>
 		
-		<hr />
+		</div>
 		
-<script type="text/javascript">
-// variable to hold request
-var request;
-// bind to the submit event of our form
-$("#mc-embedded-subscribe-form").submit(function(event){
-    // abort any pending request
-    if (request) {
-        request.abort();
-    }
-    // setup some local variables
-    var $form = $(this);
-    // let's select and cache all the fields
-    var $inputs = $form.find("input, select, button, textarea");
-    // serialize the data in the form
-    var serializedData = $form.serialize();
+		<div class="row block" id="delivery">
+			<div class="col-md-2 col-md-offset-2 visible-md visible-lg">
+				<img src="http://snapofnews.social-snapshot.com/sources.png">
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<h2>A plethora of sources</h2>
+				<p>We select our information from the most popular sources all over the nation such as <a href="http://nytimes.com" target="_blank">The New York Times</a>, <a href="http://washingtonpost.com" target="_blank">The Washington Post</a>, and the <a href="http://wsj.com" target="_blank">The Wall Street Journal</a>.</p>
 
-    // let's disable the inputs for the duration of the ajax request
-    $inputs.prop("disabled", true);
-
-    // fire off the request to /form.php
-    request = $.ajax({
-        url: "subscribe.php",
-        type: "post",
-        data: serializedData
-    });
-
-    // callback handler that will be called on success
-    request.done(function (response, textStatus, jqXHR){
-        // log a message to the console
-        
-        console.log("Hooray, it worked!");
-    });
-
-    // callback handler that will be called on failure
-    request.fail(function (jqXHR, textStatus, errorThrown){
-        // log the error to the console
-        console.error(
-            "The following error occured: "+
-            textStatus, errorThrown
-        );
-    });
-
-    // callback handler that will be called regardless
-    // if the request failed or succeeded
-    request.always(function () {
-        // reenable the inputs
-        //$inputs.prop("disabled", false);
-        //$("input").attr("disabled", true);
-        $inputs.prop("disabled", true);
-        $('#message').html('Subscribed! You\'ll receive news summary starting tomorrow at 9:30am.'
-        	);
-        $('.twitter-like').show("slow")
-    });
-
-    // prevent default posting of form
-    event.preventDefault();
-});
+			</div>			
 		
+		</div>
+		
+		<div class="row block" id="ivy">
+			<div class="col-md-5 col-md-offset-2">
+				<h2>The worldly experience</h2>
+				<p>Our goal is to help you become well informed.  Join plenty of smart students today already using SnapofNews.  Accumulate your knowledge!</p>
 
-$(document).ready(function(){
+
+
+			</div>
+			<div class="col-md-2 visible-md visible-lg">
+				<img src="http://snapofnews.social-snapshot.com/mkalogo.jpg">
+			</div>
+		
+		</div>
+
+		
+		<div class="row" style="margin-top:100px">
+			<hr />
+			<div class="join" style="">
+							<p>Want to try it?</p>
+							<a id="signup1" href="#top" class="btn btn-success btn-lg" style="margin-top:10px;">Subscribe Now</a>
+					</div>
+		</div>
+		
+		<div class="row" style="margin-top:100px">
+			<p class="text-center">Montclair Kimberley Academy / May Term / 2014</p>	
+			<p style="text-align:center;">
+				<a href="http://privacypolicy.social-snapshot.com" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "http://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			</p>	
+		</div>
+		
+	</div>
+	
+<script>
+	$(document).ready(function(){
 	$('#mce-EMAIL').focus();
 });
 $('a').click(function(){
@@ -185,6 +145,4 @@ $('a').click(function(){
 });	
 </script>
 
-</body>
-	
-</html>
+</body></html>
